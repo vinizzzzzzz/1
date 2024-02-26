@@ -1,0 +1,16 @@
+program conjunto1
+implicit none
+integer :: n
+integer, dimension(0:9) :: x=0
+do n=0,9
+x(n)=2*n
+enddo
+write(*,*)' '
+write(*,*)' '
+write(*,*)' '
+write(*,fmt="('A = {',9(i3,';'),i3,'}')")(x(n),n=0,9)
+write(*,*)' '
+write(*,*)' '
+write(*,*)' '
+pause
+end program conjunto1
